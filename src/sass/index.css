@@ -1,0 +1,16 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@media screen and (min-width: 414px) {
+  .header {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .header__navigation {
+    opacity: 0;
+  }
+}
+.header__menu-button {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,44 @@
+.header{
+    @media screen and (min-width:480px) {
+        width: 480px;
+        height: 50px;
+    }
+
+    &__logo{
+        margin: 10px 10px;
+        height: 40px;
+    }
+
+    &__container{
+        @media screen and (min-width:480px) {
+            display: flex;
+        }
+    }
+
+    &__navigation{
+        @media screen and (min-width:480px){
+            opacity: 0;
+        }
+    }
+
+    &__contacts-wrapper{
+        display: inline-flex;
+        flex-direction: column;
+
+        margin: 10px;
+
+        
+    }
+
+    &__menu-button{
+        padding: 0;
+        border: none;
+        color: inherit;
+        background-color: transparent;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+}
+
