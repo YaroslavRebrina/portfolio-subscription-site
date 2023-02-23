@@ -28,20 +28,22 @@
 
 
 .swiper {
-  width: inherit;
+  width: 95%;
   height: 400px;
+  border-radius: 50px 50px 50px 50px;
+
 
   &-button-prev,
   &-button-next {
-    opacity: 0;
+    visibility: hidden;
+    margin-top: 100px;
 
     @media screen and (min-width: 769px) {
-      opacity: 1;
+    visibility: visible;
     }
   }
 
   &-slide {
-    border-radius: 50px 80px 80px 50px;
     
     background: url(../images/img/hero.jpg);
 
