@@ -1,24 +1,27 @@
 .header{
-    @media screen and (min-width:480px) {
-        width: 480px;
-        height: 50px;
+        min-width: 100%;
+        background: linear-gradient(to bottom right, rgb(125, 125, 222), pink);
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 30px 30px;
+
+    &__container{
+        align-items: center
     }
 
     &__logo{
         margin: 10px 10px;
         height: 40px;
-    }
 
-    &__container{
-        @media screen and (min-width:480px) {
-            display: flex;
-        }
+        &:active{
+            fill: blue
+        };
     }
 
     &__navigation{
-        @media screen and (min-width:480px){
-            opacity: 0;
-        }
+        opacity: 0;
     }
 
     &__contacts-wrapper{
@@ -33,12 +36,24 @@
     &__menu-button{
         padding: 0;
         border: none;
-        color: inherit;
         background-color: transparent;
-        position: fixed;
+        position: absolute;
         right: 15px;
-        top: 15px;
+        top: 10px;
+        transition: fill 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+        &:active{
+            fill: white;
+            stroke: black;
+        }
     }
 
+    &__q{
+        margin: 0;
+        width: 340px;
+
+        font-family: inherit;
+        
+    }
 }
 

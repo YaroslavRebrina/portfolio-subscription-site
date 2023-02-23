@@ -1,0 +1,56 @@
+.hero{
+
+    &__container {
+            margin-top: 70px;
+        }
+    
+        &__text-on-slide {
+            font-size: 21px;
+            color: var(--main-text-color);
+            text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
+            
+            margin-left: 30px;
+            margin-bottom: 50%;
+            margin-top: 30%;
+    
+        }
+    
+        &__span {
+            font-size: 32px;
+        }
+
+        &__name{
+            color: transparent;
+            font-size: 0;
+        }
+}
+
+
+
+.swiper {
+  width: inherit;
+  height: 400px;
+
+  &-button-prev,
+  &-button-next {
+    opacity: 0;
+
+    @media screen and (min-width: 769px) {
+      opacity: 1;
+    }
+  }
+
+  &-slide {
+    border-radius: 50px 80px 80px 50px;
+    
+    background: url(../images/img/hero.jpg);
+
+    @media screen and (min-width: 769px) {
+      background: url(../images/img/hero__769.jpg);
+    }
+
+    @media screen and (min-width: 1160px) {
+      background: url(../images/img/hero__1160.jpg);
+    }
+  }
+}
