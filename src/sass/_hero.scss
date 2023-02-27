@@ -1,58 +1,70 @@
-.hero{
+.hero {
+  margin-top: 70px;
 
-    &__container {
-            margin-top: 70px;
-        }
-    
-        &__text-on-slide {
-            font-size: 21px;
-            color: var(--main-text-color);
-            text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
-            
-            margin-left: 30px;
-            margin-bottom: 50%;
-            margin-top: 30%;
-    
-        }
-    
-        &__span {
-            font-size: 32px;
-        }
+  &__container {
+    display: flex;
+    width: 480px;
+    margin: 0 auto;
+  }
 
-        &__name{
-            color: transparent;
-            font-size: 0;
-        }
+  &__text-on-slide {
+    font-size: 21px;
+    color: var(--main-text-color);
+    text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px,
+      #000 -2px 0px 2px;
+
+    margin-left: 30px;
+  }
+
+  &__span {
+    font-size: 32px;
+  }
+
+  &__name {
+    color: transparent;
+    font-size: 0;
+  }
 }
 
-
-
 .swiper {
-  width: 95%;
+  width: 480px;
   height: 400px;
   border-radius: 50px 50px 50px 50px;
-
-
+  @media screen and (min-width: 769px) {
+    border-radius: 0;
+    width: 769px;
+  }
+  @media screen and (min-width: 1160px) {
+    width: 1160px;
+  }
   &-button-prev,
   &-button-next {
+    color: wheat;
+    border: 2px;
     visibility: hidden;
     margin-top: 100px;
 
     @media screen and (min-width: 769px) {
-    visibility: visible;
+      visibility: visible;
     }
   }
 
   &-slide {
-    
-    background: url(../images/img/hero.jpg);
+    width: inherit;
+    background-image: linear-gradient(
+        140deg,
+        rgba(144, 67, 180, 0.5383403361344538) 10%,
+        rgba(1, 18, 168, 0.6223739495798319) 86%
+      ),
+      url(../images/img/hero.jpg);
+    background-repeat: no-repeat;
 
     @media screen and (min-width: 769px) {
-      background: url(../images/img/hero__769.jpg);
+      background-image: url(../images/img/hero__769.jpg);
     }
 
     @media screen and (min-width: 1160px) {
-      background: url(../images/img/hero__1160.jpg);
+      background-image: url(../images/img/hero__1160.jpg);
     }
   }
 }

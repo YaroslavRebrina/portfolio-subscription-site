@@ -14,6 +14,6 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
 
    autoplay: {
-   delay: 5000,
+   delay: 3000,
  },
 });

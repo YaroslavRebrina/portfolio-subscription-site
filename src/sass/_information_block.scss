@@ -1,0 +1,44 @@
+.advantages {
+  margin-top: 30px;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    border-radius: 20px;
+
+    height: 250px;
+    flex-basis: calc(100% / 1);
+
+    @media screen and (min-width: 769px) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+  }
+
+  &__item__text {
+    display: block;
+
+    margin: 0 20px;
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+  }
+}
