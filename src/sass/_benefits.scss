@@ -1,0 +1,43 @@
+.benefits {
+  margin-top: 60px;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 0;
+  }
+
+  &__list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    border-radius: 5px 5px 50% 50%;
+    width: 200px;
+    height: 200px;
+
+    background-color: #fff;
+
+    &:nth-child(even) {
+      align-self: flex-end;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    display: block;
+    height: auto;
+    width: 150px;
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+    font-size: 14px;
+  }
+}
