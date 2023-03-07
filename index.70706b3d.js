@@ -1,0 +1,2 @@
+new Swiper(".swiper",{direction:"horizontal",loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},autoplay:{delay:3e3}});const e=document.querySelectorAll(".eye"),t=document.querySelector(".head");document.addEventListener("mousemove",(function(n){const o=n.clientX,r=n.clientY,i=t.getBoundingClientRect(),a=i.left+i.width/2,c=i.top+i.width/2,l=function(e,t,n,o){const r=o-t,i=n-e,a=Math.atan2(r,i);return 180*a/Math.PI}(o,r,a,c);e.forEach((e=>{e.style.transform=`rotate(${270+l}deg)`}))}));
+//# sourceMappingURL=index.70706b3d.js.map
