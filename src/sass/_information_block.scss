@@ -1,12 +1,6 @@
 .advantages {
   margin-top: 60px;
 
-  &__title {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-
   &__list {
     padding: 0;
     display: flex;
@@ -34,7 +28,8 @@
   &__item__text {
     display: block;
 
-    margin: 0 20px;
+    text-align: center;
+    margin: 5px 20px;
   }
 
   &__icon {
